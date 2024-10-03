@@ -7,6 +7,11 @@
   "engines": {
     "vscode": "^1.94.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codetelo/autocommitmessage"
+  },
+  "activationEvents": [],
   "categories": [
     "Other"
   ],
@@ -20,10 +25,10 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "pnpm run compile",
+    "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "pretest": "pnpm run compile && pnpm run lint",
+    "pretest": "npm run compile && npm run lint",
     "lint": "eslint src",
     "test": "vscode-test"
   },
